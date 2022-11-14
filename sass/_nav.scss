@@ -133,68 +133,74 @@
         justify-content: space-between;
         font-family: globales.$font-family_2;
 
+        .logo {
+            height: 70px;
+            width: 80px;
+            position: relative;
+            left: 30px;
+        }
+        .header__nav__ul {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 0%;
+            font-size: 30px;
+            font-family: globales.$font-family_2;
+        } 
         
-    }
-    
-    .logo {
-        height: 70px;
-        width: 80px;
-        position: relative;
-        left: 30px;
-    }
-    .carta {
-        display: block;
-        height: 30px;
-        position: relative;
-        top: 4px;
-    }
-    .header__nav__ul {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        margin: 0%;
-        font-size: 30px;
-        font-family: globales.$font-family_2;
-    }
+        .header__nav__ul {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 0%;
+            font-size: 30px;
+            font-family: globales.$font-family_2;
+            
+            .nav__a {
+                text-decoration: line;
+                color: globales.$color_text1;
+                    &:hover {
+                        color: globales.$color_hover-nav;
+                    }
+            }
 
-    .nav__a {
-        text-decoration: line;
-        color: globales.$color_text1;
-        &:hover {
-            color: globales.$color_hover-nav;
-        }
-    }
-    .contacto {
-        font-size: 30px;
-        display: flex;
-        position: relative;
-        right: 30px;
-    }
-    .a__a {
-        display: none;
-        text-decoration: none;
-        background-size: cover;
-        &:hover {
-            color: globales.$color_text1;
-        }
-    }
-    li {
-        list-style: none;
-        margin-left: 40px;
-        ul {
-            ul {
-                display: none;
-                position: absolute;
-                padding: 10px 0 10px 0;
+            
+            li {
+                list-style: none;
+                margin-left: 40px;
+                ul {
+                    display: none;
+                    position: absolute;
+                    padding: 10px 0 10px 0;
+                }
                 li {
-                    display: block;
+                    &:hover {
+                        ul {
+                            display: block;
+                        }
+                    }
                 }
             }
-            li {
-                &:hover {
-                    ul {
-                        display: block;
-                    }
+        }
+
+        .contacto {
+            font-size: 30px;
+            display: flex;
+            position: relative;
+            right: 30px;
+            color: globales.$color_text1;
+                
+            .carta {
+                display: block;
+                height: 30px;
+                position: relative;
+                top: 4px;
+            }
+            .nav__a {
+                color: globales.$color_text1;
+                
+                &:hover{
+                    color: globales.$color_hover-nav;
                 }
             }
         }
