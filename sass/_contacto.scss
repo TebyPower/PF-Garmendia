@@ -1,0 +1,39 @@
+@use 'globales';
+
+form {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 1000px;
+	font-size: 40px;
+	font-style: italic;
+	color: globales.$color_text1;
+	text-shadow: 2px 2px 1px black;
+}
+legend {
+	text-decoration: underline;
+	padding-top: 60px;
+	font-size: 60px;
+	font-weight: bolder;
+	color: globales.$color_2;
+	text-shadow: 2px 2px 2px white;
+}
+fieldset {
+	div {
+		padding: 8px;
+	}
+}
+.section__contacto{
+    background-image: url(../img/gatoperro.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+@media (min-width:1028px) {
+
+}

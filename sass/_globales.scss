@@ -1,0 +1,46 @@
+$color_text1: aliceblue;
+$color_2: #000;
+$color_hover-nav: #F49F0A;
+$font-family_1: 'Beau Rivage', cursive;
+$font-family_2: 'Times New Roman', Times, serif;
+$background-navegacion: #97725E;
+$background-text_body: #00000028;
+$color_ft: rgb(131, 49, 131);
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#body_grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+}
+
+#body_grid_familia {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+#main_familia {
+	background-image: url(../img/map\ y\ vidio.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+}
+
+/* responsive */
+/*tablets*/
+@media screen and (min-width:768px) {
+    #body_grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+	}
+}
+
+
+

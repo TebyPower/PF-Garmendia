@@ -1,0 +1,202 @@
+@use 'globales';
+
+
+.header__nav {
+	display: none;
+}
+.navbar__movil {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+	background-color: globales.$background-navegacion;
+    
+    .logo {
+        height: 70px;
+        width: 80px;
+    }
+    .titulo_navbar {
+        display: block;
+        margin-bottom: -1rem;
+        font-size: 50px;
+        font-family: globales.$font-family_1;
+        color: globales.$color_text1;
+        text-shadow: 2px 2px 2px black;
+    }
+    div{
+        .header__nav__ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            font-size: 25px;
+            justify-self: center;
+
+            .nav-item {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+}
+
+
+
+
+.contacto {
+	display: flex;
+	justify-self: center;
+	right: 30px;
+
+    .contactanos {
+	display: block;
+    }
+
+    .carta {
+	display: none;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    
+	.header__nav {
+		display: none;
+	}
+
+	.navbar__movil {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+		background-color: globales.$background-navegacion;
+	
+        .logo {
+            height: 70px;
+            width: 80px;
+        }
+
+        .titulo_navbar {
+            display: block;
+            margin-bottom: -1rem;
+            font-size: 60px;
+            font-family: globales.$font-family_1;
+            color: globales.$color_text1;
+            text-shadow: 2px 2px 2px black;
+	    }
+
+        div{
+            .header__nav__ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                font-size: 25px;
+                justify-self: center;
+
+                .nav-item {
+		            margin-bottom: 10px;
+	            }
+            }
+        }
+
+    }
+	
+	
+	
+	.contacto {
+		display: flex;
+		justify-self: center;
+		right: 30px;
+
+        .contactanos {
+                display: block;
+        }
+
+        .carta {
+            display: none;
+        }   
+	}
+	
+}
+
+@media (min-width:1028px) {
+    
+    .navbar__movil {
+        display: none;
+    }
+    
+    .header__nav {
+        display: flex;
+        align-items: center;
+        background-color: globales.$background-navegacion;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        font-family: globales.$font-family_2;
+
+        
+    }
+    
+    .logo {
+        height: 70px;
+        width: 80px;
+        position: relative;
+        left: 30px;
+    }
+    .carta {
+        display: block;
+        height: 30px;
+        position: relative;
+        top: 4px;
+    }
+    .header__nav__ul {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0%;
+        font-size: 30px;
+        font-family: globales.$font-family_2;
+    }
+
+    .nav__a {
+        text-decoration: line;
+        color: globales.$color_text1;
+        &:hover {
+            color: globales.$color_hover-nav;
+        }
+    }
+    .contacto {
+        font-size: 30px;
+        display: flex;
+        position: relative;
+        right: 30px;
+    }
+    .a__a {
+        display: none;
+        text-decoration: none;
+        background-size: cover;
+        &:hover {
+            color: globales.$color_text1;
+        }
+    }
+    li {
+        list-style: none;
+        margin-left: 40px;
+        ul {
+            ul {
+                display: none;
+                position: absolute;
+                padding: 10px 0 10px 0;
+                li {
+                    display: block;
+                }
+            }
+            li {
+                &:hover {
+                    ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

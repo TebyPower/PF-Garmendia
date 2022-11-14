@@ -1,0 +1,89 @@
+@use 'globales';
+
+.h2_famili {
+	text-decoration: underline;
+	font-family: globales.$font-family_1;
+	color: globales.$color_text1;
+	text-shadow: 2px 2px 2px black;
+	font-size: 40px;
+	font-style: italic;
+	text-align: center;
+}
+.c1 {
+	padding: 40px;
+}
+.c2 {
+	padding: 40px;
+}
+.c3 {
+	padding: 40px;
+}
+.c4 {
+	padding: 40px;
+}
+
+
+
+@media (min-width:1028px) {
+    @-webkit-keyframes tracking-in-contract-bck-top {
+        0% {
+            letter-spacing: 1em;
+            -webkit-transform: translateZ(400px) translateY(-300px);
+            transform: translateZ(400px) translateY(-300px);
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.6;
+        }
+        100% {
+            -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes tracking-in-contract-bck-top {
+        0% {
+            letter-spacing: 1em;
+            -webkit-transform: translateZ(400px) translateY(-300px);
+            transform: translateZ(400px) translateY(-300px);
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.6;
+        }
+        100% {
+            -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+            opacity: 1;
+        }
+    }
+    .cont_1 {
+        display: grid;
+        grid-template-areas: "c1 c2 c3" "c4 c1 c2" "c3 c4 c2";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        padding: 40px;
+    }
+    #main_familia {
+        background-image: url(../img/map\ y\ vidio.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+    }
+    .carousel {
+        -webkit-animation: tracking-in-contract-bck-top 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-contract-bck-top 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    .nav_famili {
+        display: flex;
+        position: static;
+    }
+    .h2_famili {
+        font-family: globales.$font-family_1;
+        color: globales.$color_text1;
+        text-shadow: 2px 2px 2px black;
+        font-size: 60px;
+    }
+    
+}
