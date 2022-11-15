@@ -72,8 +72,8 @@
         padding-top: 20px;
     }
     .carousel {
-        -webkit-animation: tracking-in-contract-bck-top 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-        animation: tracking-in-contract-bck-top 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        -webkit-animation: tracking-in-contract-bck-top 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-contract-bck-top 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
     .nav_famili {
         display: flex;
@@ -85,5 +85,4 @@
         text-shadow: 2px 2px 2px black;
         font-size: 60px;
     }
-    
 }

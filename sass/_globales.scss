@@ -7,6 +7,19 @@ $background-navegacion: #97725E;
 $background-text_body: #00000028;
 $color_ft: rgb(131, 49, 131);
 
+%h1sec{
+	font-size: large;
+    font-family: $font-family_2;
+    font-weight: bolder;
+    color: $color_text1;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    padding: 20px;
+	background: rgb(187, 74, 74);
+        background: linear-gradient(163deg, rgb(180, 175, 103) 30%, rgb(235, 140, 85) 40%, rgb(141, 255, 151) 70%);
+	margin: 0;
+}
+
 
 * {
     margin: 0;
