@@ -379,7 +379,7 @@ fieldset div {
     padding-bottom: 20px;
     font-size: 80px;
   }
-  h2 {
+  .h2 {
     text-decoration: underline;
     padding-bottom: 20px;
     font-size: 80px;
@@ -787,7 +787,7 @@ footer img {
     }
   }
   .h1_sec {
-    font-size: 40px;
+    font-size: 50px;
   }
   .card-group {
     background: rgb(243, 121, 121);
@@ -836,6 +836,26 @@ footer img {
   }
   .card:nth-child(3) {
     animation-delay: 1.2s;
+  }
+}
+.h2_nstr {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .h2_nstr {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+  }
+}
+@media (min-width: 1028px) {
+  .h2_nstr {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
   }
 }
 
