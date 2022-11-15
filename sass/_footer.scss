@@ -102,23 +102,29 @@ footer {
 }
 
 @media (min-width:1028px) {
-    .footer_Text {
-        display: block;
-        color: globales.$color_ft;
-        text-decoration: underline;
-        text-shadow: 1px 1px 0px black;
-    }
+    
     footer {
         background-color: globales.$background-navegacion;
+        margin: 0px;
         div {
             ul {
                 display: flex;
                 align-items: center;
                 font-size: 20px;
                 justify-content: space-around;
-                padding: 0 40px 30px 0;
+                padding: 0 0 30px 0;
             }
-        }
+                li{
+                    a{
+                        .footer_Text {
+                            display: block;
+                            color: globales.$color_ft;
+                            text-decoration: underline;
+                            text-shadow: 1px 1px 0px black;
+                        }
+                    }
+                }
+            }
         img {
             height: 80px;
             width: 80px;
