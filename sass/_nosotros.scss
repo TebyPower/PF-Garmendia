@@ -4,6 +4,11 @@
     display: flex;
     font-size: 20px;
     justify-content: center;
+
+    .text_nstr{
+        
+
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -11,6 +16,10 @@
         display: flex;
         font-size: 30px;
         justify-content: center;
+        
+        .text_nstr{
+            padding: 40px 0px;
+        }
     }
 }
 
@@ -19,5 +28,11 @@
         display: flex;
         font-size: 40px;
         justify-content: center;
+        
+        .text_nstr{
+            display: flex ;
+            text-align: center;
+            padding: 0 0 40px 0;
+        }
     }
-}
+} 

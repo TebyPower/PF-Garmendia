@@ -843,12 +843,14 @@ footer img {
   font-size: 20px;
   justify-content: center;
 }
-
 @media screen and (min-width: 768px) {
   .h2_nstr {
     display: flex;
     font-size: 30px;
     justify-content: center;
+  }
+  .h2_nstr .text_nstr {
+    padding: 40px 0px;
   }
 }
 @media (min-width: 1028px) {
@@ -856,6 +858,11 @@ footer img {
     display: flex;
     font-size: 40px;
     justify-content: center;
+  }
+  .h2_nstr .text_nstr {
+    display: flex;
+    text-align: center;
+    padding: 0 0 40px 0;
   }
 }
 
