@@ -8,7 +8,7 @@ $background-text_body: #00000028;
 $color_ft: rgb(49, 85, 131);
 
 %h1sec{
-	font-size: large;
+	font-size: 30px;
     font-family: $font-family_2;
     font-weight: bolder;
     color: $color_text1;
@@ -16,10 +16,15 @@ $color_ft: rgb(49, 85, 131);
     text-align: center;
     padding: 20px;
 	background: rgb(187, 74, 74);
-        background: linear-gradient(163deg, rgb(180, 175, 103) 30%, rgb(235, 140, 85) 40%, rgb(141, 255, 151) 70%);
+    background: linear-gradient(163deg, rgb(180, 175, 103) 30%, rgb(235, 140, 85) 40%, rgb(141, 255, 151) 70%);
 	margin: 0;
 }
 
+%h2_nstr{
+	display: flex;
+	justify-content: center;
+    text-decoration: underline;
+}
 
 * {
     margin: 0;

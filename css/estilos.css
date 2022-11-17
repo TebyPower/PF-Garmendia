@@ -1,5 +1,5 @@
 .h1_sec {
-  font-size: large;
+  font-size: 30px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
   color: aliceblue;
@@ -9,6 +9,12 @@
   background: rgb(187, 74, 74);
   background: linear-gradient(163deg, rgb(180, 175, 103) 30%, rgb(235, 140, 85) 40%, rgb(141, 255, 151) 70%);
   margin: 0;
+}
+
+.main_nstr .div_nstr .h2_nstr {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
 }
 
 * {
@@ -186,9 +192,6 @@
     display: none;
     position: absolute;
     padding: 10px 0 10px 0;
-  }
-  .header__nav .header__nav__ul li li:hover ul {
-    display: block;
   }
   .header__nav .contacto {
     font-size: 30px;
@@ -409,11 +412,6 @@ fieldset div {
   }
 }
 footer {
-  display: none;
-}
-
-/* Footer */
-footer {
   display: block;
   background-color: #97725E;
 }
@@ -421,54 +419,25 @@ footer div ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  padding: 0 0 20px 0;
+  padding: 0;
 }
-footer div ul li .footer_Text {
+footer div ul img {
+  height: 35px;
+  width: 35px;
+}
+footer div ul .footer_Text {
   display: none;
 }
 footer div h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
   text-shadow: 2px 2px 2px black;
   color: aliceblue;
-}
-footer img {
-  height: 80px;
-  width: 80px;
+  margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-  footer {
-    display: none;
-  }
-  /* body */
-  /* Footer */
-  footer {
-    display: block;
-    background-color: #97725E;
-  }
-  footer div ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    padding: 0 0 20px 0;
-  }
-  footer div h3 {
-    text-align: center;
-    font-size: 30px;
-    font-style: italic;
-    text-shadow: 2px 2px 2px black;
-    color: aliceblue;
-  }
-  footer img {
-    height: 80px;
-    width: 80px;
-  }
-  .footer_Text {
-    display: none;
-  }
-}
+/* Footer */
 @media screen and (min-width: 768px) {
   footer {
     display: block;
@@ -478,18 +447,14 @@ footer img {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    padding: 0 0 20px 0;
+    padding: 0;
+  }
+  footer div ul img {
+    height: 45px;
+    width: 45px;
   }
   footer div h3 {
-    text-align: center;
-    font-size: 30px;
-    font-style: italic;
-    text-shadow: 2px 2px 2px black;
-    color: aliceblue;
-  }
-  footer img {
-    height: 80px;
-    width: 80px;
+    font-size: 25px;
   }
   .footer_Text {
     display: none;
@@ -503,19 +468,26 @@ footer img {
   footer div ul {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     justify-content: space-around;
-    padding: 0 0 30px 0;
   }
-  footer div li a .footer_Text {
+  footer div ul li a .footer_Text {
     display: block;
     color: rgb(49, 85, 131);
     text-decoration: underline;
     text-shadow: 1px 1px 0px black;
   }
-  footer img {
-    height: 80px;
-    width: 80px;
+  footer div ul li a img {
+    height: 60px;
+    width: 60px;
+  }
+  footer div h3 {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
+    color: aliceblue;
+    margin: 0;
   }
 }
 .h2_famili {
@@ -641,7 +613,7 @@ footer img {
 
 @media screen and (min-width: 768px) {
   .h1_sec {
-    font-size: 30px;
+    font-size: 40px;
   }
   .card-group {
     background: rgb(243, 121, 121);
@@ -838,31 +810,60 @@ footer img {
     animation-delay: 1.2s;
   }
 }
-.h2_nstr {
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
+.main_nstr {
+  background-image: url(../img/paisaje.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+.main_nstr .div_nstr {
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0 50px;
+  background-color: rgba(0, 0, 0, 0.356);
+  text-shadow: 2px 2px 3px black;
+  border-radius: 20px;
+}
+.main_nstr .div_nstr .h2_nstr {
+  font-size: 25px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.main_nstr .div_nstr .h3_nstr {
+  font-size: 22px;
+  text-align: center;
+  text-decoration: underline;
+}
+.main_nstr .div_nstr .text_nstr {
+  display: block;
+  text-align: center;
+  margin: 0 40px;
+  font-size: 18px;
+}
+
 @media screen and (min-width: 768px) {
-  .h2_nstr {
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
+  .main_nstr .div_nstr .h2_nstr {
+    font-size: 35px;
   }
-  .h2_nstr .text_nstr {
-    padding: 40px 0px;
+  .main_nstr .div_nstr .h3_nstr {
+    font-size: 30px;
+  }
+  .main_nstr .div_nstr .text_nstr {
+    margin: 0 100px;
+    font-size: 22px;
   }
 }
 @media (min-width: 1028px) {
-  .h2_nstr {
-    display: flex;
-    font-size: 40px;
-    justify-content: center;
+  .main_nstr .div_nstr .h2_nstr {
+    font-size: 45px;
   }
-  .h2_nstr .text_nstr {
-    display: flex;
-    text-align: center;
-    padding: 0 0 40px 0;
+  .main_nstr .div_nstr .h3_nstr {
+    font-size: 35px;
+    font-style: normal;
+  }
+  .main_nstr .div_nstr .text_nstr {
+    font-size: 25px;
+    margin: 0 80px;
   }
 }
 

@@ -1,38 +1,82 @@
 @use 'globales';
 
-.h2_nstr{
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
+.main_nstr{
+    background-image: url(../img/paisaje.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 
-    .text_nstr{
-        
+    .div_nstr{
+        color: globales.$color_text1;
+        font-family: globales.$font-family_2;
+        margin: 0 50px;
+        background-color: rgba(0, 0, 0, 0.356);
+        text-shadow: 2px 2px 3px black;
+        border-radius: 20px;
+    
+        .h2_nstr{
+            @extend%h2_nstr;
+            font-size: 25px;    
+            padding-bottom: 20px;   
+            margin-top: 20px;
+        }
 
+        .h3_nstr{
+            font-size: 22px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+
+        .text_nstr{
+            display:block;
+            text-align: center;
+            margin: 0 40px;
+            font-size: 18px
+        }
     }
 }
-
 @media screen and (min-width:768px) {
-    .h2_nstr{
-        display: flex;
-        font-size: 30px;
-        justify-content: center;
+    .main_nstr{
         
-        .text_nstr{
-            padding: 40px 0px;
+        .div_nstr{    
+            
+
+            .h2_nstr{
+                font-size: 35px;                
+            }    
+
+            .h3_nstr{
+                font-size: 30px;
+            }
+            .text_nstr{
+                margin: 0 100px;
+                font-size: 22px;
+            }
+            
         }
     }
 }
 
 @media (min-width:1028px) {
-    .h2_nstr{
-        display: flex;
-        font-size: 40px;
-        justify-content: center;
-        
-        .text_nstr{
-            display: flex ;
-            text-align: center;
-            padding: 0 0 40px 0;
-        }
+
+    .main_nstr{
+        .div_nstr{
+            
+
+            .h2_nstr{
+                font-size: 45px;
+            }    
+
+            .h3_nstr{
+                font-size: 35px;
+                font-style: normal;
+            }
+
+            .text_nstr{
+                font-size: 25px;
+                margin: 0 80px;
+            }
+        } 
     }
-} 
+}

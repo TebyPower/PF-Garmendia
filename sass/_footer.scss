@@ -1,100 +1,58 @@
 @use 'globales';
 
 footer {
-    display: none;
+    display: block;
+    background-color: globales.$background-navegacion;
+    div {
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            padding: 0;
+            
+            img {
+            height: 35px;
+            width: 35px;
+            }
+            
+            .footer_Text {
+                display: none;
+            }
+        }
+        h3 {
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+            text-shadow: 2px 2px 2px black;
+            color: globales.$color_text1;
+            margin: 0;
+        }
+    }
 }
 
 /* Footer */
-footer {
-	display: block;
-	background-color: globales.$background-navegacion;
-	div {
-		ul {
-			display: flex;
-			list-style: none;
-			justify-content: space-around;
-			padding: 0 0 20px 0;
-            
-            li {
-                .footer_Text{
-                    display: none;
+
+@media screen and (min-width:768px) {
+
+    footer {
+        display: block;
+        background-color: globales.$background-navegacion;
+        div {
+            ul {
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                padding: 0;
+                img {
+                    height: 45px;
+                    width: 45px;
                 }
             }
-        }
-		h3 {
-			text-align: center;
-			font-size: 30px;
-			font-style: italic;
-			text-shadow: 2px 2px 2px black;
-			color: globales.$color_text1;
-		}
-	}
-	img {
-		height: 80px;
-		width: 80px;
-	}
-}
-
-@media screen and (min-width:768px) {
-    footer {
-        display: none;
-    }
-
-    /* body */
-
-    /* Footer */
-
-    footer {
-        display: block;
-        background-color: globales.$background-navegacion;
-        div {
-            ul {
-                display: flex;
-                list-style: none;
-                justify-content: space-around;
-                padding: 0 0 20px 0;
-            }
             h3 {
-                text-align: center;
-                font-size: 30px;
-                font-style: italic;
-                text-shadow: 2px 2px 2px black;
-                color: globales.$color_text1;
+                font-size: 25px;
             }
         }
-        img {
-            height: 80px;
-            width: 80px;
-        }
-    }
-    .footer_Text {
-        display: none;
-    }
-}
-
-@media screen and (min-width:768px) {
-    footer {
-        display: block;
-        background-color: globales.$background-navegacion;
-        div {
-            ul {
-                display: flex;
-                list-style: none;
-                justify-content: space-around;
-                padding: 0 0 20px 0;
-            }
-            h3 {
-                text-align: center;
-                font-size: 30px;
-                font-style: italic;
-                text-shadow: 2px 2px 2px black;
-                color: globales.$color_text1;
-            }
-        }
-        img {
-            height: 80px;
-            width: 80px;
-        }
+        
     }
     .footer_Text {
         display: none;
@@ -110,10 +68,8 @@ footer {
             ul {
                 display: flex;
                 align-items: center;
-                font-size: 20px;
+                font-size: 15px;
                 justify-content: space-around;
-                padding: 0 0 30px 0;
-            }
                 li{
                     a{
                         .footer_Text {
@@ -122,13 +78,21 @@ footer {
                             text-decoration: underline;
                             text-shadow: 1px 1px 0px black;
                         }
+                        img {
+                            height: 60px;
+                            width: 60px;
+                        }
                     }
                 }
             }
-        img {
-            height: 80px;
-            width: 80px;
-        }
+            h3 {
+                text-align: center;
+                font-size: 30px;
+                font-style: italic;
+                text-shadow: 2px 2px 2px black;
+                color: globales.$color_text1;
+                margin: 0;
+            }            
+        }       
     }
-    
 }
