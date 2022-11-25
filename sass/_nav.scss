@@ -1,58 +1,60 @@
 @use 'globales';
 
+@media screen and (min-width:250px){
+    
+    .header__nav {
+        display: none;
+    }
+    .navbar__movil {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        background-color: globales.$background-navegacion;
+            
+            
+            .logo {
+                height: 70px;
+                width: 80px;
+            }
+            .titulo_navbar {
+                display: block;
+                margin-bottom: -1rem;
+                font-size: 30px;
+                font-family: globales.$font-family_1;
+                color: globales.$color_text1;
+                text-shadow: 2px 2px 2px black;
+            }
+            div{
+                .header__nav__ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    list-style: none;
+                    font-size: 25px;
+                    justify-self: center;
 
-.header__nav {
-	display: none;
-}
-.navbar__movil {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto auto;
-	background-color: globales.$background-navegacion;
-        
-        
-        .logo {
-            height: 70px;
-            width: 80px;
-        }
-        .titulo_navbar {
-            display: block;
-            margin-bottom: -1rem;
-            font-size: 40px;
-            font-family: globales.$font-family_1;
-            color: globales.$color_text1;
-            text-shadow: 2px 2px 2px black;
-        }
-        div{
-            .header__nav__ul {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                list-style: none;
-                font-size: 25px;
-                justify-self: center;
-
-                .nav-item {
-                    margin-bottom: 10px;
+                    .nav-item {
+                        margin-bottom: 10px;
+                    }
                 }
             }
+    }
+
+
+    .contacto {
+        display: flex;
+        justify-self: center;
+        right: 30px;
+
+        .contactanos {
+        display: block;
         }
-}
 
+        .carta {
+        display: none;
+        }
 
-.contacto {
-	display: flex;
-	justify-self: center;
-	right: 30px;
-
-    .contactanos {
-	display: block;
     }
-
-    .carta {
-	display: none;
-    }
-
 }
 
 @media screen and (min-width:768px) {
