@@ -56,19 +56,17 @@
 }
 
 .navbar__movil {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
+  display: block;
   background-color: #97725E;
 }
-.navbar__movil .logo {
+.navbar__movil .container-fluid .logo {
   height: 70px;
   width: 80px;
 }
 .navbar__movil .titulo_navbar {
   display: block;
   margin-bottom: -1rem;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Beau Rivage", cursive;
   color: aliceblue;
   text-shadow: 2px 2px 2px black;
@@ -102,9 +100,7 @@
     display: none;
   }
   .navbar__movil {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    display: block;
     background-color: #97725E;
   }
   .navbar__movil .logo {
@@ -213,38 +209,105 @@
     color: #F49F0A;
   }
 }
-form {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 1000px;
-  font-size: 40px;
-  font-style: italic;
-  color: aliceblue;
-  text-shadow: 2px 2px 1px black;
-}
-
-legend {
-  text-decoration: underline;
-  padding-top: 60px;
-  font-size: 60px;
-  font-weight: bolder;
-  color: #000;
-  text-shadow: 2px 2px 2px white;
-}
-
-fieldset div {
-  padding: 8px;
-}
-
 .section__contacto {
   background-image: url(../img/gatoperro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.section__contacto .formularioRegistro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.section__contacto .formularioRegistro .formulario {
+  background-color: rgba(244, 158, 10, 0.4117647059);
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 70px 70px rgba(0, 0, 0, 0.2);
+  font-size: 10px;
+}
+.section__contacto .formularioRegistro .formulario .title {
+  text-align: center;
+  text-shadow: 2px 2px 1px white;
+  font-style: italic;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.section__contacto .formularioRegistro .formulario .inputContainer {
+  position: relative;
+  width: 90%;
+  height: 45px;
+  margin-bottom: 17px;
+}
+.section__contacto .formularioRegistro .formulario .inputContainer .input {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+.section__contacto .formularioRegistro .formulario .inputContainer .input::placeholder {
+  color: transparent;
+}
+.section__contacto .formularioRegistro .formulario .inputContainer .input:focus + .label {
+  top: -8px;
+  left: 3px;
+  z-index: 10;
+  font-weight: 20px;
+  font-size: 14px;
+  color: black;
+}
+.section__contacto .formularioRegistro .formulario .inputContainer .input:focus {
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+.section__contacto .formularioRegistro .formulario .inputContainer .input:not(:placeholder-shown) + .label {
+  top: -8px;
+  left: 3px;
+  z-index: 10;
+  font-weight: 20px;
+  font-size: 14px;
+}
+.section__contacto .formularioRegistro .formulario .inputContainer .label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #282828;
+  font-size: 16px;
+  font-weight: bolder;
+  transition: 0.5s;
+  z-index: 0;
+}
+.section__contacto .formularioRegistro .formulario .submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.452);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.section__contacto .formularioRegistro .formulario .submitBtn:hover {
+  background-color: black;
+  transform: translateY(-2px);
 }
 
 .tituloFoto {
