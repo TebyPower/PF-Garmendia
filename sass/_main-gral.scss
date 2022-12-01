@@ -120,8 +120,8 @@
         display: flex;
         justify-content: space-around;
         text-align: center;
-        background: rgb(0, 212, 255);
-        background: linear-gradient(163deg, rgba(0, 212, 255, 1) 30%, rgba(12, 49, 255, 1) 51%, rgba(143, 160, 255, 1) 67%);
+        background: rgb(180, 87, 0);
+        background: linear-gradient(163deg, rgb(180, 87, 0) 30%, rgb(255, 167, 84) 51%, rgb(250, 204, 0) 67%);
         font-size: 30px;
         padding: 30px;
         font-style: italic;
@@ -146,15 +146,15 @@
     }
     .text_M {
         color: globales.$color_2;
-        text-shadow: none;
+        text-shadow: 1px 1px 2px white;
         font-family: globales.$font-family_2;
     }
     .text3 {
         display: flex;
         justify-content: space-around;
         background-image: none;
-        background: rgb(0, 212, 255);
-        background: linear-gradient(163deg, rgba(0, 212, 255, 1) 30%, rgba(12, 49, 255, 1) 51%, rgba(143, 160, 255, 1) 67%);
+        background: rgb(180, 87, 0);
+        background: linear-gradient(163deg, rgb(180, 87, 0) 30%, rgb(255, 167, 84) 51%, rgb(250, 204, 0) 67%);
         p {
             padding: 5px;
         }

@@ -436,8 +436,8 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background: rgb(0, 212, 255);
-    background: linear-gradient(163deg, rgb(0, 212, 255) 30%, rgb(12, 49, 255) 51%, rgb(143, 160, 255) 67%);
+    background: rgb(180, 87, 0);
+    background: linear-gradient(163deg, rgb(180, 87, 0) 30%, rgb(255, 167, 84) 51%, rgb(250, 204, 0) 67%);
     font-size: 30px;
     padding: 30px;
     font-style: italic;
@@ -462,15 +462,15 @@
   }
   .text_M {
     color: #000;
-    text-shadow: none;
+    text-shadow: 1px 1px 2px white;
     font-family: "Times New Roman", Times, serif;
   }
   .text3 {
     display: flex;
     justify-content: space-around;
     background-image: none;
-    background: rgb(0, 212, 255);
-    background: linear-gradient(163deg, rgb(0, 212, 255) 30%, rgb(12, 49, 255) 51%, rgb(143, 160, 255) 67%);
+    background: rgb(180, 87, 0);
+    background: linear-gradient(163deg, rgb(180, 87, 0) 30%, rgb(255, 167, 84) 51%, rgb(250, 204, 0) 67%);
   }
   .text3 p {
     padding: 5px;
